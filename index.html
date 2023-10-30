@@ -53,9 +53,15 @@
 
             <div class="profile__buttons">
                 <!-- Insert your CV -->
-                <a download="" href="assets/pdf/CV_NabinAdhikari_Grad.pdf" class="button">
-                    Download CV <i class="ri-download-line"></i>
-                </a>
+
+                <button id="showPdfButton" class="button" style="border: none; outline: none;">Download CV <i
+                        class="ri-download-line"></i></button>
+
+                <script>
+                    document.getElementById("showPdfButton").addEventListener("click", function () {
+                        window.open("assets/pdf/CV_NabinAdhikari_Grad.pdf", "_blank");
+                    });
+                </script>
 
                 <div class="profile__buttons-small">
                     <!-- Insert a real number plus country code -->
